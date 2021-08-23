@@ -1,0 +1,180 @@
+/*footer*/
+
+.footer {
+  background-color: #2f303a;
+  padding: 60px 0 60px 0;
+}
+
+.footer__logo {
+  display: block;
+  margin-bottom: 20px;
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.footer__container {
+  display: flex;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+address a {
+  text-decoration: none;
+}
+
+.footer__inform {
+  font-style: normal;
+  & :last-child {
+    padding-bottom: 0;
+  }
+}
+
+.footer__location {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: $white-color;
+}
+
+.footer__contact-info {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.footer__contact {
+  margin-bottom: 9px;
+}
+/*footer join-block*/
+
+.join-block__title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.join-block {
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 95px 83px;
+  width: 206px;
+  height: 44px;
+}
+
+.join-list {
+  margin-top: 20px;
+  display: flex;
+  cursor: pointer;
+  fill: $white-color;
+}
+
+.join-list__item {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: $white-color;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.join-list__network {
+  fill: $white-color;
+}
+.join-list li + li {
+  margin-left: 10px;
+}
+/*==============================================subscription form in footer================================================*/
+
+.form {
+  position: relative;
+  margin-left: 91px;
+}
+
+.form__title {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.form__input-mail {
+  padding: 15px 16px 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  color: $white-color;
+  background: #2f303a;
+}
+
+.submit {
+  width: 200px;
+  height: 50px;
+}
+
+.subscribe-btn {
+  position: relative;
+  margin-left: 12px;
+  width: 200px;
+  height: 50px;
+  border: none;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 62px 10px 29px;
+
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: $white-color;
+  cursor: pointer;
+}
+
+.subscribe-btn__icon {
+  position: absolute;
+  top: 50%;
+  right: 28px;
+  transform: translateY(-50%);
+}
+input::placeholder {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
