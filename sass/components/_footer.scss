@@ -2,21 +2,48 @@
 
 .footer {
   background-color: #2f303a;
-  padding: 60px 0 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  /* padding: 60px 0 60px 0;*/
+
+  @media screen and (min-width: 1200px) {
+    padding: 60px 0 60px 0;
+  }
 }
 
 .footer__logo {
-  display: block;
-  margin-bottom: 20px;
+  /*display: block;
+  margin-bottom: 20px;*/
   font-family: Raleway;
   font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
+  /*font-size: 26px;
+  line-height: 1.19;*/
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .footer__container {
-  display: flex;
+  /*display: flex;*/
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    text-align: left;
+  }
 }
 
 .footer a {
@@ -30,7 +57,10 @@ address a {
 .footer__inform {
   font-style: normal;
   & :last-child {
-    padding-bottom: 0;
+    /* padding-bottom: 0;*/
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 0;
+    }
   }
 }
 
@@ -57,7 +87,14 @@ address a {
   }
 }
 .footer__contact {
-  margin-bottom: 9px;
+  /* margin-bottom: 9px;*/
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 /*footer join-block*/
 
@@ -71,17 +108,37 @@ address a {
   color: #ffffff;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-form__box {
+    flex-direction: row;
+  }
+}
+
 .join-block {
-  align-items: center;
+  /*align-items: center;
   justify-content: center;
   margin: 0 0 95px 83px;
   width: 206px;
-  height: 44px;
+  height: 44px;*/
+  display: block;
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 95px 83px;
+  }
 }
 
 .join-list {
   margin-top: 20px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   fill: $white-color;
 }
@@ -114,8 +171,17 @@ address a {
 /*==============================================subscription form in footer================================================*/
 
 .form {
-  position: relative;
-  margin-left: 91px;
+  /*position: relative;
+  margin-left: 91px;*/
+  @media screen and (min-width: 768px) {
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    position: relative;
+    margin-left: 91px;
+    margin-top: 0;
+  }
 }
 
 .form__title {
@@ -125,11 +191,11 @@ address a {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--white-color);
+  color: #ffffff;
 }
 
 .form__input-mail {
-  padding: 15px 16px 15px 16px;
+  /* padding: 15px 16px 15px 16px;*/
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -138,16 +204,31 @@ address a {
   height: 50px;
   color: $white-color;
   background: #2f303a;
+  padding: 15px 0 15px 16px;
+
+  @media screen and (min-width: 1200px) {
+    padding: 15px 16px 15px 16px;
+  }
+}
+
+.footer-form__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
 }
 
 .submit {
-  width: 200px;
+  /* width: 200px;*/
   height: 50px;
 }
 
 .subscribe-btn {
   position: relative;
-  margin-left: 12px;
+  margin-top: 20px;
   width: 200px;
   height: 50px;
   border: none;
@@ -161,6 +242,11 @@ address a {
   letter-spacing: 0.06em;
   color: $white-color;
   cursor: pointer;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+    margin-top: 0;
+  }
 }
 
 .subscribe-btn__icon {
@@ -173,8 +259,12 @@ input::placeholder {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.25;
-  display: flex;
+  /* display: flex;*/
   align-items: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }

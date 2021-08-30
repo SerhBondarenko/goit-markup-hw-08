@@ -13,26 +13,41 @@
     <!-- <link rel="stylesheet" href="./css/styles.css" />-->
   </head>
 
-  <body>
+  <body class="modal-open">
     <!--header-->
 
     <header class="header">
       <div class="container header__container">
-        <nav class="site-nav">
+        <nav class="site-nav ">
           <a href="./index.html" class="logo"
             ><span class="logo-blue">Web</span><span class="logo-black">Studio</span></a
           >
-          <ul class="site-nav__list list">
+          <ul class="site-nav__list hide list">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link site-nav__link--current">Студия</a>
             </li>
             <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
+              <a href="./portfolio.html" class="site-nav__link "
+                >Портфолио</a
+              >
             </li>
             <li class="site-nav__item"><a href="#" class="site-nav__link">Контакты</a></li>
           </ul>
-        </nav>
-        <ul class="nav list">
+          <!--header mobile button-->
+
+          <button type="button" class="menu-button js-open-menu" data-menu-button >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+              aria-controls="menu-container"
+            >
+            
+              <use class="icon-menu" href="./images/icons.svg#menu_40px"></use>
+            </svg>
+          </button>
+          </nav>
+        <ul class="nav hide list">
           <li class="nav__item">
             <a href="mailto:info@devstudio.com" class="nav__link"
               ><svg width="10" height="16" class="nav__icon">
@@ -48,10 +63,65 @@
             >
           </li>
         </ul>
+          
+          <!--header mobile menu-->
+
+          <div class="menu-container js-menu-container is-open" id="menu-container" data-menu>
+            <button type="button" class="menu-button__close js-close-menu" data-menu-button >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+
+            >
+               <use class="icon-cross" href="./images/icons.svg#close_40px"></use>
+            </svg>
+          </button>
+            <ul class="site-nav__list list">
+              <li class="site-nav__item">
+                <a href="./index.html" class="site-nav__link site-nav__link--current">Студия</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
+              </li>
+              <li class="site-nav__item"><a href="#" class="site-nav__link">Контакты</a></li>
+            </ul>
+            <ul class="nav--menu list">
+              <li class="nav__item">
+                <a href="mailto:info@devstudio.com" class="nav__link nav__link--mail"
+                  ><svg width="10" height="16" class="nav__icon">
+                    <use href="./images/icons.svg#envelope"></use></svg
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link nav__link--tel" href="tel:+380961111111">
+                  <svg width="16" height="12" class="nav__icon nav__icon--size">
+                    <use href="./images/icons.svg#phone"></use></svg
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+            <ul class="nav-social list">
+              <li class="nav-social_item">
+                <a href="" class="nav-social_link link">Instagram</a>
+              </li>
+              <li class="nav-social_item">
+                <a href="" class="nav-social_link link">Twitter</a>
+              </li>
+              <li class="nav-social_item">
+                <a href="" class="nav-social_link link">Facebook</a>
+              </li>
+              <li class="nav-social_item">
+                <a href="" class="nav-social_link link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </header>
     <main>
-      <!--hero-->
+      <!--hero section-->
 
       <section class="hero-section">
         <h1 class="hero-section__title">
@@ -116,7 +186,7 @@
       <!--What are we doing-->
 
       <section class="section-list">
-        <div class="container">
+        <div class="container business-hide">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="business list">
             <li class="business__list">
@@ -309,37 +379,37 @@
           <h2 class="section-title">Постоянные клиенты</h2>
           <div>
             <ul class="client list">
-              <li>
+              <li class="client__item">
                 <a href="#" class="client__link"
                   ><svg width="106" height="60">
                     <use href="./images/icons.svg#logo-0"></use></svg
                 ></a>
               </li>
-              <li>
+              <li class="client__item">
                 <a href="#" class="client__link"
                   ><svg width="106" height="60">
                     <use href="./images/icons.svg#logo-1"></use></svg
                 ></a>
               </li>
-              <li>
+              <li class="client__item">
                 <a href="#" class="client__link"
                   ><svg width="106" height="60">
                     <use href="./images/icons.svg#logo-2"></use></svg
                 ></a>
               </li>
-              <li>
+              <li class="client__item">
                 <a href="#" class="client__link"
                   ><svg width="106" height="60">
                     <use href="./images/icons.svg#logo-3"></use></svg
                 ></a>
               </li>
-              <li>
+              <li class="client__item">
                 <a href="#" class="client__link"
                   ><svg width="106" height="60">
                     <use href="./images/icons.svg#logo-4"></use></svg
                 ></a>
               </li>
-              <li>
+              <li class="client__item">
                 <a href="#" class="client__link"
                   ><svg width="106" height="60">
                     <use href="./images/icons.svg#logo-5"></use></svg
@@ -413,13 +483,15 @@
 
         <form class="form">
           <h3 class="form__title">Подпишитесь на рассылку</h3>
-          <input type="email" id="mail" placeholder="E-mail" class="form__input-mail" />
-          <button type="submit" class="subscribe-btn">
-            Подписаться
-            <svg width="24" height="24" class="subscribe-btn__icon">
-              <use href="./images/icons.svg#icon-send"></use>
-            </svg>
-          </button>
+          <div class="footer-form__box">
+            <input type="email" id="mail" placeholder="E-mail" class="form__input-mail" />
+            <button type="submit" class="subscribe-btn">
+              Подписаться
+              <svg width="24" height="24" class="subscribe-btn__icon">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
         </form>
       </div>
     </footer>
@@ -494,14 +566,16 @@
                 name="contract"
                 id="policy"
               />
-              <span class="checkbox__icon"> </span> Соглашаюсь с рассылкой и принимаю &nbsp
-              <a href="#" class="checkbox__link">Условия договора </a></label
+              <span class="checkbox__icon"></span>Соглашаюсь с рассылкой и принимаю
+              <a href="#" class="checkbox__link">Условия договора</a></label
             >
           </div>
           <button class="submit-btn" type="submit">Отправить</button>
         </form>
       </div>
     </div>
+
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

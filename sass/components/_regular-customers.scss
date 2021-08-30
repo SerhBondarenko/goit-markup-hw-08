@@ -2,11 +2,28 @@
 
 .client {
   display: flex;
+  flex-wrap: wrap;
   text-align: center;
   justify-content: center;
+  margin: -30px 0 0 -30px;
 
   & li + li {
-    margin-left: 30px;
+    /* margin-left: 30px;*/
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin: -30px 0 0 -30px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    margin: 0;
   }
 }
 
@@ -14,7 +31,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  /*width: 170px;*/
   height: 92px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
@@ -28,5 +45,19 @@
   &:focus {
     fill: $accent-color;
     border: 1px solid $accent-color;
+  }
+}
+
+.client__item {
+  margin: 30px 0 0 30px;
+  width: calc(100% / 2 - 30px);
+
+  @media screen and (min-width: 768px) {
+    margin-left: 30px;
+    margin-top: 30px;
+    width: calc(100% / 3 - 30px);
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 0;
   }
 }
