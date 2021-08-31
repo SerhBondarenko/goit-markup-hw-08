@@ -66,7 +66,7 @@
           
           <!--header mobile menu-->
 
-          <div class="menu-container js-menu-container is-open" id="menu-container" data-menu>
+          <div class="menu-container js-menu-container" id="menu-container" data-menu>
             <button type="button" class="menu-button__close js-close-menu" data-menu-button >
             <svg
               width="40"
@@ -191,8 +191,10 @@
           <ul class="business list">
             <li class="business__list">
               <div class="business__link">
-                <a href="#"
-                  ><img src="./images/box1.jpg" width="370" alt="Структура проекта" />
+                <a href="#">
+                <img srcset="./images/img/box1.jpg 1x, ./images/img/box1@2x.jpg 2x"
+                 src="./images/box1.jpg" width="370" 
+                 alt="Структура проекта"/>
                   <div class="business__title">
                     <h3>Десктопные приложения</h3>
                   </div>
@@ -202,7 +204,8 @@
             <li class="business__list">
               <div class="business__link">
                 <a href="#"
-                  ><img src="./images/box2.jpg" width="370" alt="Оптимизация" />
+                  ><img srcset="./images/img/box2.jpg 1x, ./images/img/box2@2x.jpg 2x"
+                   src="./images/box2.jpg" width="370" alt="Оптимизация" />
                   <div class="business__title">
                     <h3>Мобильные приложения</h3>
                   </div>
@@ -212,7 +215,8 @@
             <li class="business__list">
               <div class="business__link">
                 <a href="#"
-                  ><img src="./images/box3.jpg" width="370" alt="Дизайн" />
+                  ><img srcset="./images/img/box3.jpg 1x, ./images/img/box3@2x.jpg 2x"
+                   src="./images/box3.jpg" width="370" alt="Дизайн" />
                   <div class="business__title">
                     <h3>Дизайнерские решения</h3>
                   </div>
@@ -230,7 +234,15 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__item">
-              <img src="./images/igor.jpg" width="270" alt="Игорь" />
+                <picture>
+                    <source srcset="./images/img/igor-mob.jpg 1x, ./images/img/igor-mob@2x.jpg 2x"
+                    media="(max-width: 767px)"/>
+                    <source srcset="./images/img/igor-tab.jpg 1x, ./images/img/igor-tab@2x.jpg 2x"
+                    media="(max-width: 1199px)"/>
+                    <source srcset="./images/img/igor-dec.jpg 1x, ./images/img/igor-dec@2x.jpg 2x"
+                    media="(min-width: 1200px)"/>
+                  <img src="./images/igor.jpg" width="270" alt="Игорь" />
+                </picture>
               <div class="card">
                 <h3 class="card__title">Игорь Демьяненко</h3>
                 <p class="card__text">Product Designer</p>
@@ -265,7 +277,16 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/olga.jpg" width="270" alt="Ольга" />
+              <picture>
+                <source srcset="./images/img/olga-mob.jpg 1x, ./images/img/olga-mob@2x.jpg 2x"
+                media="(max-width: 767px)"/>
+                <source srcset="./images/img/olga-tab.jpg 1x, ./images/img/olga-tab@2x.jpg 2x"
+                media="(max-width: 1199px)"/>
+                <source srcset="./images/img/olga-dec.jpg 1x, ./images/img/olga-dec@2x.jpg 2x"
+                media="(min-width: 1200px)"/>
+                <img src="./images/olga.jpg" width="270" alt="Ольга" />
+              </picture>
+
               <div class="card">
                 <h3 class="card__title">Ольга Репина</h3>
                 <p class="card__text">Frontend Developer</p>
@@ -300,7 +321,16 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/tarasov.jpg" width="270" alt="Николай" />
+               <picture>
+                  <source srcset="./images/img/kolya-mob.jpg 1x, ./images/img/kolya-mob@2x.jpg 2x"
+                  media="(max-width: 767px)"/>
+                  <source srcset="./images/img/kolya-tab.jpg 1x, ./images/img/kolya-tab@2x.jpg 2x"
+                  media="(max-width: 1199px)"/>
+                  <source srcset="./images/img/kolya-dec.jpg 1x, ./images/img/kolya-dec@2x.jpg 2x"
+                  media="(min-width: 1200px)"/>
+                <img src="./images/tarasov.jpg" width="270" alt="Николай" />
+              </picture>
+              
               <div class="card">
                 <h3 class="card__title">Николай Тарасов</h3>
                 <p class="card__text">Marketing</p>
@@ -335,7 +365,16 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/ermakov.jpg" width="270" alt="Михаил" />
+               <picture>
+                  <source srcset="./images/img/miha-mob.jpg 1x, ./images/img/miha-mob@2x.jpg 2x"
+                  media="(max-width: 767px)"/>
+                  <source srcset="./images/img/miha-tab.jpg 1x, ./images/img/miha-tab@2x.jpg 2x"
+                  media="(max-width: 1199px)"/>
+                  <source srcset="./images/img/miha-dec.jpg 1x, ./images/img/miha-dec@2x.jpg 2x"
+                  media="(min-width: 1200px)"/>
+                <img src="./images/ermakov.jpg" width="270" alt="Михаил" />
+              </picture>
+              
               <div class="card">
                 <h3 class="card__title">Михаил Ермаков</h3>
                 <p class="card__text">UI Designer</p>
@@ -576,6 +615,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

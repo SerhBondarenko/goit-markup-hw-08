@@ -69,7 +69,7 @@
         </ul>
           <!--header mobile menu-->
 
-          <div class="menu-container js-menu-container is-open" id="menu-container" data-menu>
+          <div class="menu-container js-menu-container" id="menu-container" data-menu>
             <button type="button" class="menu-button__close js-close-menu" data-menu-button >
             <svg
               width="40"
@@ -153,7 +153,16 @@
               <li class="portfolio-list__item">
                 <a href="#">
                   <div class="thumb">
-                    <img src="./images/technokryak.jpg" width="370" alt="technokryak" />
+                      <picture>
+                    <source srcset="./images/img/box1-mob.jpg 1x, ./images/img/box1-mob@2x.jpg 2x"
+                    media="(max-width: 767px)"/>
+                    <source srcset="./images/img/box1-tab.jpg 1x, ./images/img/box1-tab@2x.jpg 2x"
+                    media="(max-width: 1199px)"/>
+                    <source srcset="./images/img/box1-dec.jpg 1x, ./images/img/box1-dec@2x.jpg 2x"
+                    media="(min-width: 1200px)"/>
+                      <img src="./images/technokryak.jpg" width="370" alt="technokryak" />
+                      </picture>
+                   
                     <div class="thumb__overlay">
                       <p>
                         Технокряк это современная площадка распространения коронавируса. Компании
@@ -170,66 +179,138 @@
               </li>
               <li class="portfolio-list__item">
                 <a href=""
-                  ><img
-                    src="./images/new-orlean-vs-golden-star.jpg"
-                    width="370"
-                    alt="New Orlean vs Golden Star"
-                /></a>
+                  >
+                   <picture>
+                    <source srcset="./images/img/box2-mob.jpg 1x, ./images/img/box2-mob@2x.jpg 2x"
+                    media="(max-width: 767px)"/>
+                    <source srcset="./images/img/box2-tab.jpg 1x, ./images/img/box2-tab@2x.jpg 2x"
+                    media="(max-width: 1199px)"/>
+                    <source srcset="./images/img/box2-dec.jpg 1x, ./images/img/box2-dec@2x.jpg 2x"
+                    media="(min-width: 1200px)"/>
+                      <img src="./images/new-orlean-vs-golden-star.jpg" width="370" alt="New Orlean vs Golden Star"/>
+                      </picture>
+                      </a>
                 <div class="filter-card">
                   <h2 class="filter-card__title">Постер New Orlean vs Golden Star</h2>
                   <p class="filter-card__desc">Дизайн</p>
                 </div>
               </li>
               <li class="portfolio-list__item">
-                <a href=""><img src="./images/seafood.jpg" width="370" alt="Seafood" /></a>
+                <a href="">
+                     <picture>
+                    <source srcset="./images/img/box3-mob.jpg 1x, ./images/img/box3-mob@2x.jpg 2x"
+                    media="(max-width: 767px)"/>
+                    <source srcset="./images/img/box3-tab.jpg 1x, ./images/img/box3-tab@2x.jpg 2x"
+                    media="(max-width: 1199px)"/>
+                    <source srcset="./images/img/box3-dec.jpg 1x, ./images/img/box3-dec@2x.jpg 2x"
+                    media="(min-width: 1200px)"/>
+                      <img src="./images/seafood.jpg" width="370" alt="Seafood"/>
+                      </picture>
+                      </a>
+                  
                 <div class="filter-card">
                   <h2 class="filter-card__title">Ресторан Seafood</h2>
                   <p class="filter-card__desc">Приложение</p>
                 </div>
               </li>
               <li class="portfolio-list__item">
-                <a href=""><img src="./images/prime.jpg" width="370" alt="Prime" /></a>
+                <a href="">
+                   <picture>
+                    <source srcset="./images/img/box4-mob.jpg 1x, ./images/img/box4-mob@2x.jpg 2x"
+                    media="(max-width: 767px)"/>
+                    <source srcset="./images/img/box4-tab.jpg 1x, ./images/img/box4-tab@2x.jpg 2x"
+                    media="(max-width: 1199px)"/>
+                    <source srcset="./images/img/box4-dec.jpg 1x, ./images/img/box4-dec@2x.jpg 2x"
+                    media="(min-width: 1200px)"/>
+                     <img src="./images/prime.jpg" width="370" alt="Prime" />
+                      </picture>
+                    </a>
                 <div class="filter-card">
                   <h2 class="filter-card__title">Проект Prime</h2>
                   <p class="filter-card__desc">Маркетинг</p>
                 </div>
               </li>
               <li class="portfolio-list__item">
-                <a href=""><img src="./images/boxes.jpg" width="370" alt="Boxes" /></a>
+                <a href="">
+                  <picture>
+                    <source srcset="./images/img/box5-mob.jpg 1x, ./images/img/box5-mob@2x.jpg 2x"
+                    media="(max-width: 767px)"/>
+                    <source srcset="./images/img/box5-tab.jpg 1x, ./images/img/box5-tab@2x.jpg 2x"
+                    media="(max-width: 1199px)"/>
+                    <source srcset="./images/img/box5-dec.jpg 1x, ./images/img/box5-dec@2x.jpg 2x"
+                    media="(min-width: 1200px)"/>
+                    <img src="./images/boxes.jpg" width="370" alt="Boxes" />
+                      </picture>
+                  </a>
                 <div class="filter-card">
                   <h2 class="filter-card__title">Проект Boxes</h2>
                   <p class="filter-card__desc">Приложение</p>
                 </div>
               </li>
               <li class="portfolio-list__item">
-                <a href=""
-                  ><img src="./images/inspiration-has-no-borders.jpg" width="370" alt="Borders"
-                /></a>
+                <a href="">
+                  <picture>
+                    <source srcset="./images/img/box6-mob.jpg 1x, ./images/img/box6-mob@2x.jpg 2x"
+                    media="(max-width: 767px)"/>
+                    <source srcset="./images/img/box6-tab.jpg 1x, ./images/img/box6-tab@2x.jpg 2x"
+                    media="(max-width: 1199px)"/>
+                    <source srcset="./images/img/box6-dec.jpg 1x, ./images/img/box6-dec@2x.jpg 2x"
+                    media="(min-width: 1200px)"/>
+                    <img src="./images/inspiration-has-no-borders.jpg" width="370" alt="Borders"/>
+                      </picture>
+                  </a>
                 <div class="filter-card">
                   <h2 class="filter-card__title">Inspiration has no Borders</h2>
                   <p class="filter-card__desc">Веб-сайт</p>
                 </div>
               </li>
               <li class="portfolio-list__item">
-                <a href=""
-                  ><img src="./images/limited-edition.jpg" width="370" alt="Limited Edition"
-                /></a>
+                <a href="">
+                  <picture>
+                    <source srcset="./images/img/box7-mob.jpg 1x, ./images/img/box7-mob@2x.jpg 2x"
+                    media="(max-width: 767px)"/>
+                    <source srcset="./images/img/box7-tab.jpg 1x, ./images/img/box7-tab@2x.jpg 2x"
+                    media="(max-width: 1199px)"/>
+                    <source srcset="./images/img/box7-dec.jpg 1x, ./images/img/box7-dec@2x.jpg 2x"
+                    media="(min-width: 1200px)"/>
+                   <img src="./images/limited-edition.jpg" width="370" alt="Limited Edition"/>
+                      </picture>
+                      
+                    </a>
                 <div class="filter-card">
                   <h2 class="filter-card__title">Издание Limited Edition</h2>
                   <p class="filter-card__desc">Дизайн</p>
                 </div>
               </li>
               <li class="portfolio-list__item">
-                <a href=""><img src="./images/lab.jpg" width="370" alt="LAB" /></a>
+                <a href="">
+                  <picture>
+                    <source srcset="./images/img/box8-mob.jpg 1x, ./images/img/box8-mob@2x.jpg 2x"
+                    media="(max-width: 767px)"/>
+                    <source srcset="./images/img/box8-tab.jpg 1x, ./images/img/box8-tab@2x.jpg 2x"
+                    media="(max-width: 1199px)"/>
+                    <source srcset="./images/img/box8-dec.jpg 1x, ./images/img/box8-dec@2x.jpg 2x"
+                    media="(min-width: 1200px)"/>
+                   <img src="./images/lab.jpg" width="370" alt="LAB"/>
+                      </picture>
+                  </a>
                 <div class="filter-card">
                   <h2 class="filter-card__title">Проект LAB</h2>
                   <p class="filter-card__desc">Маркетинг</p>
                 </div>
               </li>
               <li class="portfolio-list__item">
-                <a href=""
-                  ><img src="./images/growing-business.jpg" width="370" alt="Business"
-                /></a>
+                <a href="">
+                  <picture>
+                    <source srcset="./images/img/box9-mob.jpg 1x, ./images/img/box9-mob@2x.jpg 2x"
+                    media="(max-width: 767px)"/>
+                    <source srcset="./images/img/box9-tab.jpg 1x, ./images/img/box9-tab@2x.jpg 2x"
+                    media="(max-width: 1199px)"/>
+                    <source srcset="./images/img/box9-dec.jpg 1x, ./images/img/box9-dec@2x.jpg 2x"
+                    media="(min-width: 1200px)"/>
+                   <img src="./images/growing-business.jpg" width="370" alt="Business"/>
+                      </picture>
+                 </a>
                 <div class="filter-card">
                   <h2 class="filter-card__title">Growing Business</h2>
                   <p class="filter-card__desc">Приложение</p>
@@ -308,6 +389,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

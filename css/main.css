@@ -287,7 +287,7 @@ p {
 /*responsive images*/
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -707,15 +707,15 @@ img {
 }
 
 .hero-section {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img-hero.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-hero.jpg);
+  background-image: url(../images/hero-phone.jpg), -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+  background-image: url(../images/hero-phone.jpg), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-size: cover;
   /*max-width: 1600px;*/
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
   /* padding: 200px 0 200px 0;*/
   background-color: #2f303a;
   padding-top: 118px;
@@ -725,6 +725,46 @@ img {
 @media screen and (min-width: 1200px) {
   .hero-section {
     padding: 200px 0 200px 0;
+  }
+}
+
+/*отзывчивые фоновые изображения*/
+@media (min-width: 480px) {
+  .hero-section {
+    background-image: url("../images/hero-phone.jpg"), -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+    background-image: url("../images/hero-phone.jpg"), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  }
+}
+
+@media (min-width: 480px) and (min-device-pixel-ratio: 2), (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 480px) and (min-resolution: 192dpi), (min-width: 480px) and (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: url("../images/hero-phone@2x.jpg");
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-section {
+    background-image: url("../images/hero-tablet.jpg"), -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+    background-image: url("../images/hero-tablet.jpg"), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  }
+}
+
+@media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: url("../images/hero-tablet@2x.jpg");
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-section {
+    background-image: url("../images/hero-desctop.jpg"), -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+    background-image: url("../images/hero-desctop.jpg"), linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  }
+}
+
+@media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: url("../images/hero-desctop@2x.jpg");
   }
 }
 
@@ -766,7 +806,6 @@ img {
   background-color: #2196f3;
 }
 
-/*hero-section button*/
 .backdrop {
   position: fixed;
   top: 0;
@@ -952,7 +991,7 @@ img {
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .business-hide {
     display: none;
   }
@@ -2210,12 +2249,11 @@ textarea:focus {
   fill: #2196f3;
 }
 
-.menu-button .icon-menu {
+/*.menu-button .icon-menu {
   display: block;
-}
-
+}*/
 .menu-button.is-open .icon-menu {
-  display: block;
+  display: none;
 }
 
 /*Не работает css правило  узнать почему в селекторе не нужно ставить пробел*/
@@ -2246,7 +2284,7 @@ textarea:focus {
   fill: #2196f3;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .menu-container {
     position: fixed;
     background-color: #fff;
@@ -2254,12 +2292,12 @@ textarea:focus {
     z-index: 2;
     width: 100vw;
     height: 100vh;
-    display: block;
+    display: none;
     top: 0;
     left: 0;
   }
   .menu-container.is-open {
-    display: none;
+    display: block;
   }
 }
 
