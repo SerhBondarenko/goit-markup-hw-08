@@ -64,9 +64,24 @@
     display: none;
     top: 0;
     left: 0;
+
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+
     &.is-open {
-      display: block;
+      display: flex;
     }
+    .site-nav__list--menu {
+      margin-bottom: auto;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .nav--menu {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 64px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -100,6 +115,7 @@
     padding-left: 10px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
+
   .nav-social_link {
     font-style: normal;
     font-weight: 500;
@@ -107,5 +123,6 @@
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: #2196f3;
+    text-decoration: none;
   }
 }

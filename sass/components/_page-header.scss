@@ -183,14 +183,6 @@
   }
 }
 
-@media screen and (max-width: 767px) {
-  .nav--menu {
-    display: flex;
-    flex-direction: column-reverse;
-    margin-top: 306px;
-    margin-bottom: 64px;
-  }
-}
 @media screen and (min-width: 768px) {
   .nav .nav__item + .nav__item {
     margin-top: 10px;

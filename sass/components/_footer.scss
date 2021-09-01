@@ -130,7 +130,7 @@ address a {
   @media screen and (min-width: 1200px) {
     align-items: center;
     justify-content: center;
-    margin: 0 0 95px 83px;
+    margin: 0 0 0 83px;
   }
 }
 
@@ -200,14 +200,17 @@ address a {
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  width: 358px;
+  width: 450px;
   height: 50px;
   color: $white-color;
   background: #2f303a;
   padding: 15px 0 15px 16px;
-
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
   @media screen and (min-width: 1200px) {
     padding: 15px 16px 15px 16px;
+    width: 358px;
   }
 }
 
@@ -248,7 +251,6 @@ address a {
     margin-top: 0;
   }
 }
-
 .subscribe-btn__icon {
   position: absolute;
   top: 50%;
