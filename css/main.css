@@ -1358,13 +1358,11 @@ img {
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 1200px) {
   .footer__logo {
     display: block;
-    margin-bottom: 20px;
     font-size: 26px;
     line-height: 1.19;
   }
@@ -1405,6 +1403,7 @@ address a {
 
 .footer__inform {
   font-style: normal;
+  margin-top: 20px;
 }
 
 .footer__inform :last-child {
@@ -1449,12 +1448,6 @@ address a {
 
 .footer__contact:not(:last-child) {
   margin-bottom: 8px;
-}
-
-@media screen and (min-width: 1200px) {
-  .footer__contact {
-    margin-bottom: 9px;
-  }
 }
 
 /*footer join-block*/
